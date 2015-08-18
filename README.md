@@ -12,7 +12,7 @@ Javascript snippet for merchants to include on their checkout web page
             var t = document.createElement('script');
             t.type = 'text/javascript';
             t.async = true; 
-            t.src = (document.location.protocol == 'https:'? 'https' : 'http') + '://api.basset.io/track.js';
+            t.src = (document.location.protocol == 'https:'? 'https' : 'http') + '://www.basset.io/track.js';
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(t, s);
           })();
