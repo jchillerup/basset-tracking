@@ -1,9 +1,7 @@
 
 (function() { // encapsulate using anonymous function
     // Helper functions
-    // ----------------
-    var protocol = document.location.protocol == 'https:' ? 'https' : 'http';
-
+    
     // Generate a unique ID to refer to this specefic page load
     function uuidGenerator() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(char) {
@@ -18,7 +16,7 @@
     // Send data to server
     function sendData() {
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("POST", protocol + "://api.basset.io/track", true);
+        xmlHttp.open("POST", "//api.basset.io/track", true);
         xmlHttp.timeout = 1000;
         // xmlHttp.ontimeout = function () { alert("Timed out!!!"); }
         xmlHttp.send(JSON.stringify(_basset));
@@ -62,7 +60,7 @@
                 sendData();
             }
         }
-        xmlHttp.open("GET", protocol + "://api.ipify.org?format=json", true);
+        xmlHttp.open("GET", "//api.ipify.org?format=json", true);
         xmlHttp.send(JSON.stringify(_basset));
     };
 
@@ -137,7 +135,7 @@
     var t = document.createElement('script');
     t.type = 'text/javascript';
     t.async = true;
-    t.src = protocol + '://cdn.jsdelivr.net/fingerprintjs2/0.7.1/fingerprint2.min.js';
+    t.src = '//cdn.jsdelivr.net/fingerprintjs2/0.7.1/fingerprint2.min.js';
     t.onload = function () {
         trackFingerprint();
     };
