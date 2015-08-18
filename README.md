@@ -1,7 +1,7 @@
 # basset-tracking
 Javascript snippet for merchants to include on their checkout web page
 
-##Usage
+## Usage
 1. Add the following JavaScript snippet to your checkout web page.
 
         <script type="text/javascript">
@@ -20,3 +20,28 @@ Javascript snippet for merchants to include on their checkout web page
         </script>
 
 2. Replace `<YOUR_API_KEY>` with your own API key.
+
+## Tracking data
+The script captures
+* User Agent
+* Language
+* Color Depth
+* Screen resolution
+* Timezone
+* Session Storage
+* Local Storage
+* Indexed DB
+* User Behavior
+* Open Database
+* CPU Class
+* Platform
+* DoNotTrack
+* Plugins
+* AdBlock
+* If the user has tampered with languages
+* If the user has tampered with resolution
+* If the user has tampered with OS
+* If the user has tampered with browser
+* Touch support
+* Canvas fingerprint (currently left out for performance)
+* WebGL fingerprint (currently left out for performance)
