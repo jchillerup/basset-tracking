@@ -45,3 +45,5 @@ The script captures
 * Touch support
 * Canvas fingerprint (currently left out for performance)
 * WebGL fingerprint (currently left out for performance)
+
+and sends the data to the basset.io API for analysis.
